@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.license = 'BSD'
   s.authors = { "Tyrone Trevorrow" => "tyrone@sudeium.com", "Xiph.org" => "opus@xiph.org","Onyemaechi Okafor"=>"evenmatrix@gmail.com"}
   s.source = { :git => "https://github.com/evenmatrix/libopus-ios.git", :tag => '1.1.3'}
-  s.ios.deployment_target = '6.0' # We're compiling arm64, so I think 6.0 minimum is needed
-  s.source_files = 'config.h', 'libopus/{celt,silk,src,include}/*.{h,c}',
+  s.ios.deployment_target = '8.0' # We're compiling arm64, so I think 6.0 minimum is needed
+  s.source_files = 'libopus/config.h', 'libopus/{celt,silk,src,include}/*.{h,c}',
                    'libopus/**/{arm,float,x86}/*.{h,c}'
   s.exclude_files = 'libopus/src/opus_demo.c'
   s.public_header_files = 'libopus/include/*.h'
